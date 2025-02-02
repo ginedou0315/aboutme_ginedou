@@ -2,12 +2,21 @@
   --primary-color: #6c63ff;
   --secondary-color: #f5f2fe;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  --body-color: linear-gradient(
+    85.2deg,
+    rgba(33, 3, 40, 1) 7.5%,
+    rgba(65, 5, 72, 1) 88.7%
+  );
+}
+body {
+  background: var(--body-color);
 }
 
 h1,
 h2,
 h3 {
   margin: 0;
+  color: #c5b3e6;
 }
 
 h1 {
@@ -26,6 +35,7 @@ h3 {
 p {
   font-size: 18px;
   line-height: 1.5;
+  color: #c5b3e6;
 }
 
 .navigation-links {
@@ -65,8 +75,9 @@ p {
 }
 
 .about-paragraphs p {
-  margin: 10px;
+  margin: 10px auto;
   text-align: center;
+  max-width: 80%;
 }
 
 .email-link {
@@ -89,4 +100,9 @@ p {
   text-decoration: none;
   box-shadow: var(--box-shadow);
   text-transform: capitalize;
+}
+#ginelle {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
 }
