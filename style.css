@@ -197,26 +197,3 @@ p {
   border: 2px solid black;
   padding: 10px;
 }
-.word1,
-.word2,
-.word3,
-.word4 {
-  font-family: tahoma;
-  position: absolute;
-  width: 100%;
-  opacity: 0;
-  height: 4.5rem;
-}
-
-.message .word1 {
-  animation: word-animation 8s infinite;
-}
-.message .word2 {
-  animation: word-animation 8s infinite 2s;
-}
-.message .word3 {
-  animation: word-animation 8s infinite 4s;
-}
-.message .word4 {
-  animation: word-animation 8s infinite 6s;
-}
