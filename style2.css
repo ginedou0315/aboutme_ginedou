@@ -26,8 +26,11 @@ h3 span.prefix:hover {
 
 .message {
   color: #e4d9d9;
-  background-color: #170110;
-  margin-right: 300px;
+  font-size: 38px;
+  background: #b8a5b2;
+  text-align: left;
+  margin-right: 250px;
+  margin-left: 10px;
   font-weight: 500;
   overflow: hidden;
   border-radius: 4px;
@@ -53,19 +56,19 @@ h3 span.prefix:hover {
 }
 
 .message .word1 {
-  animation: word-animation 8s infinite;
+  animation: open-animation 8s infinite;
 }
 .message .word2 {
-  animation: word-animation 8s infinite 2s;
+  animation: open-animation 8s infinite 2s;
 }
 .message .word3 {
-  animation: word-animation 8s infinite 4s;
+  animation: open-animation 8s infinite 4s;
 }
 .message .word4 {
-  animation: word-animation 8s infinite 6s;
+  animation: open-animation 8s infinite 6s;
 }
 
-@keyframes word-animation {
+@keyframes open-animation {
   0%,
   5% {
     opacity: 0;
