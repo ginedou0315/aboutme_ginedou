@@ -1,0 +1,15 @@
+.row {
+  border-bottom: 2px solid white;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+small {
+  color: azure;
+  opacity: 40%;
+}
+.iframe_content {
+  border: 1px solid purple;
+  border-radius: 5px;
+  align-items: center;
+  padding-top: 10px;
+}
