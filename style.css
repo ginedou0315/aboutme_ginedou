@@ -16,7 +16,43 @@ body {
   font-style: normal;
   font-variation-settings: "wdth" 100, "GRAD" 0;
 }
-
+.subheading h3:before,
+.subheading h3:after {
+  background-color: #00a3e1;
+}
+subheading h3:before {
+  left: 0;
+}
+.subheading h3:before,
+.subheading h3:after {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 5px;
+  background-color: rgba(255, 255, 255, 0.6);
+  bottom: 0;
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+.subheading h3 {
+  display: inline-block;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1em;
+  letter-spacing: 0.5px;
+  position: relative;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+}
+.subheading {
+  position: relative;
+  margin-bottom: 50px;
+  text-align: center;
+}
 h1,
 h2,
 h3 {
@@ -25,7 +61,7 @@ h3 {
 }
 
 h1 {
-  font-size: 90px;
+  font-size: 80px;
 }
 
 h2 {
