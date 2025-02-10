@@ -19,7 +19,6 @@
       crossorigin="anonymous"
     />
     <title>Ginelle Doubek</title>
-    <link rel="stylesheet" href="style2.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -49,7 +48,7 @@
               <a class="nav-link" href="/project.html">Porfolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/about.html#contact">Contact me</a>
+              <a class="nav-link" href="/contact.html">Contact me</a>
             </li>
           </ul>
         </div>
@@ -60,17 +59,13 @@
         <div class="col-md-8 primary-text">
           <h1 class="text-center mt-5">Ginelle Doubek</h1>
           <div class="text-container">
-            <h3 class="text-center mt-3" id="text-animation">
-              <span class="prefix"
-                >I am a
-                <span class="message">
-                  <span class="word1">Web Developer</span>
-                  <span class="word2">Data Analyst</span>
-                  <span class="word3">Product Developer</span>
-                  <span class="word4">Data Manager</span>
-                </span>
-              </span>
-            </h3>
+            <h3 class="text-center mt-3" id="static-text">I am a</h3>
+            <ul class="dynamic-text">
+              <li><span>Data Manager</span></li>
+              <li><span>Data Analyst</span></li>
+              <li><span>Web Developer</span></li>
+              <li><span>Product Developer</span></li>
+            </ul>
           </div>
           <div class="form_container">
             <form id="question-request">
@@ -90,7 +85,7 @@
           </div>
         </div>
 
-        <div class="col-md-4 text-center">
+        <div class="col-lg-4 text-center">
           <img
             src="images/ginelle.png"
             class="img-fluid rounded mt-5"
@@ -122,6 +117,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="/index.js"></script>
-    <script src="/index2.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
   </body>
 </html>

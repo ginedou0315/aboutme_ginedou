@@ -28,3 +28,15 @@ function generateQuestion(event) {
 }
 let questionFormElement = document.querySelector("#question-request");
 questionFormElement.addEventListener("submit", generateQuestion);
+
+var typed = new Typed(".auto-type", {
+  strings: [
+    "Data Manager",
+    "Data Analyst",
+    "Web Developer",
+    "Product Developer",
+  ],
+  typeSpeed: 100,
+  backSpeed: 100,
+  loop: true,
+});

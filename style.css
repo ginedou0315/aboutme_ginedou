@@ -25,7 +25,7 @@ h3 {
 }
 
 h1 {
-  font-size: 80px;
+  font-size: 70px;
 }
 
 h2 {
@@ -110,6 +110,7 @@ p {
   width: 80%;
   height: 80%;
   object-fit: cover;
+  margin-left: 50px;
 }
 .form_container {
   padding: 15px 20px;
@@ -196,4 +197,43 @@ p {
   font-size: 28px;
   border: 2px solid black;
   padding: 10px;
+}
+
+.auto-type {
+  color: antiquewhite;
+}
+.text-container {
+  display: flex;
+}
+.text-container,
+#static-text {
+  color: white;
+  font-size: 28px;
+  font-weight: 300;
+}
+.dynamic-text li {
+  list-style: none;
+  color: #c5b3e6;
+  font-size: 28px;
+  font-weight: 500;
+  position: relative;
+}
+.dynamic-text li::after {
+  content: "";
+  position: absolute;
+  background: #220329;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-left: 2px solid plum;
+  animation: typing 3s steps(10) infinite;
+}
+@keyframes typing {
+  40%,
+  60% {
+    left: calc(100% + 30px);
+  }
+  100% {
+    left: 0;
+  }
 }
