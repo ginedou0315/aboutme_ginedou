@@ -22,6 +22,7 @@ h3 {
 
 h1 {
   font-size: 50px;
+  color: rgb(214, 109, 214);
 }
 
 h2 {
@@ -59,9 +60,13 @@ p {
   color: white;
 }
 
-.about-link {
+.resume-link,
+.linkedin-link,
+.github-link {
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
+  min-width: 100px;
+  text-align: left;
 }
 
 .homepage-link {
@@ -109,12 +114,14 @@ p {
   margin-left: 50px;
 }
 .form_container {
-  padding: 15px 20px;
+  padding: 10px;
   background-color: #9575de;
   border-radius: 5px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   box-shadow: 0px 4px 30px 0px rgb(214, 109, 214);
   margin-top: 20px;
+  width: 100%;
+  align-items: center;
 }
 @media (max-width: 1200px) {
   .form_container {
@@ -131,9 +138,9 @@ p {
   padding: 16px;
   border: 1px solid #3b1e54;
   width: 80%;
-  font-size: 16px;
+  font-size: 12px;
   border-radius: 20px;
-  line-height: 20px;
+  line-height: 15px;
   color: #3b1e54;
 }
 .submit_button {
@@ -141,10 +148,10 @@ p {
   background: var(--primary-color);
   color: var(--secondary-color);
   border: none;
-  width: 120px;
-  font-size: 16px;
+  width: 100px;
+  font-size: 12px;
   border-radius: 50px;
-  padding: 14px 24px;
+  padding: 10px 20px;
 }
 .question {
   font-size: 16px;
@@ -156,7 +163,7 @@ p {
   line-height: 1.5;
   border-left: 3px solid rgb(36, 23, 65);
   box-shadow: 0px 4px 30px 0px rgb(214, 109, 214);
-  height: 200px;
+  height: 180px;
   border-radius: 5px;
 }
 .hidden {
@@ -183,15 +190,20 @@ p {
 .collapse {
   justify-content: end !important;
 }
-.navbar-nav {
+.navbar {
+  background-color: var(--body-color) !important;
+  color: var(--primary-color) !important;
   justify-content: space-between !important;
+}
+.navbar-brand {
+  color: var(--secondary-color) !important;
 }
 .navbar-brand {
   font-family: "Great Vibes", serif;
   font-weight: 400;
   font-style: normal;
   font-size: 28px;
-  border: 2px solid black;
+  border: 2px solid white;
   padding: 10px;
 }
 
@@ -210,8 +222,7 @@ p {
   text-align: center;
   margin-left: 15px;
   line-height: 90px;
-  height: 90px;
-  color: white;
+  height: 60px;
   font-size: 30px;
   font-weight: 400;
   overflow: hidden;
