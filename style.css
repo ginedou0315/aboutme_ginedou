@@ -2,11 +2,7 @@
   --primary-color: #6c63ff;
   --secondary-color: #f5f2fe;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-  --body-color: linear-gradient(
-    85.2deg,
-    rgba(33, 3, 40, 1) 7.5%,
-    rgba(65, 5, 72, 1) 88.7%
-  );
+  --body-color: #230c29;
 }
 body {
   background: var(--body-color);
@@ -25,7 +21,7 @@ h3 {
 }
 
 h1 {
-  font-size: 70px;
+  font-size: 50px;
 }
 
 h2 {
@@ -202,20 +198,43 @@ p {
 .auto-type {
   color: antiquewhite;
 }
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .text-container {
   display: flex;
 }
-.text-container,
-#static-text {
+.text-container h3 {
+  text-align: center;
+  margin-left: 15px;
+  line-height: 90px;
+  height: 90px;
   color: white;
-  font-size: 28px;
-  font-weight: 300;
+  font-size: 30px;
+  font-weight: 400;
+  overflow: hidden;
+}
+.text-container .dynamic-text {
+  line-height: 90px;
+  height: 60px;
+  overflow: hidden;
 }
 .dynamic-text li {
   list-style: none;
   color: #c5b3e6;
-  font-size: 28px;
+  font-size: 30px;
   font-weight: 500;
+  top: 0;
+  animation: slide 12s steps(4) infinite;
+}
+@keyframes slide {
+  100% {
+    top: -360px;
+  }
+}
+.dynamic-text li {
   position: relative;
 }
 .dynamic-text li::after {
