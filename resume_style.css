@@ -67,3 +67,41 @@
   left: -50px;
   top: 90px;
 }
+.skills-container {
+  align-items: center;
+  text-align: center;
+}
+.skill {
+  width: 100%;
+  max-width: 600px;
+  padding: 0 20px;
+}
+.skill-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #c5b3e6;
+  text-transform: uppercase;
+  margin: 20px 0;
+  text-align: left;
+}
+.skill-bar {
+  height: 14px;
+  background-color: #f5f2fe;
+  border-radius: 4px;
+}
+.skill-per {
+  height: 14px;
+  background: rgb(214, 109, 214);
+  border-radius: 4px;
+  position: relative;
+  animation: fillBars 2.5s 1;
+}
+
+@keyframes fillBars {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
