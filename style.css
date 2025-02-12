@@ -54,7 +54,8 @@ p {
   text-transform: capitalize;
 }
 
-.contact-link {
+.contact-link,
+.project-link {
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
   color: white;
@@ -66,7 +67,6 @@ p {
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
   min-width: 100px;
-  text-align: left;
 }
 
 .homepage-link {
