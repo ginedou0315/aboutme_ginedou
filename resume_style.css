@@ -68,16 +68,15 @@
   top: 90px;
 }
 .skills-container {
-  align-items: center;
   text-align: center;
+  align-items: center;
 }
 .skill {
   width: 100%;
-  max-width: 600px;
-  padding: 0 20px;
+  max-width: 450px;
 }
 .skill-name {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   color: #c5b3e6;
   text-transform: uppercase;
